@@ -2,12 +2,49 @@
 <html>
 
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
     <link rel="stylesheet" href="stylesheet.css">
   </head>
+    
+    <script>
+$(document).ready(function(){
+     $("#show").click(function(){
+        $("h1").show();
+        $("h2").show();
+        $("h3").show();
+        $("h4").show();
+        $("p").show();
+        $("img").show();
+        $("a").show();
+        $(".jumbotron").show();
+        $("hr").show();
+    });   
+
+    $("#hide").click(function(){
+        $("h1").hide();
+        $("h2").hide();
+        $("h3").hide();
+        $("h4").hide();
+        $("p").hide();
+        $("img").hide();
+        $("a").hide();
+        $(".jumbotron").hide();
+        $("hr").hide();
+    });
+
+});
+</script>
+
+
 
   <body>
+
+        <h5>Click "Show" to see my resume!</h5>
+
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
 
     <head>
       <style>
@@ -75,7 +112,10 @@
             <div class="row">
               <div class= "col-md-4">
                 <h3>LinkedIn Profile</h3>
-                    <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank">See my LinkedIn Profile</a>
+                    <a href="https://www.linkedin.com/pub/lisa-larson/b7/580/559">
+                      <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Lisa Larson's profile on LinkedIn">
+                   </a>
+
               </div>
               <div class="col-md-4">
                 <h3>Github</h3>
